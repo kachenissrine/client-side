@@ -6,6 +6,8 @@ import Navbar from "../components/common/Navbar.jsx";
 import Footer from "../components/common/Footer.jsx";
 import Hero from "../components/Hero.jsx";
 import Stats from "../components/Stats.jsx";
+import UploadBox from "../components/UploadBox.jsx";
+import Category from "../components/category.jsx";
 
 
 const Home = () => {
@@ -14,8 +16,8 @@ const Home = () => {
             <Navbar />
             <Hero/>
             <Stats/>
+            <Category/>
             <Footer/>
-
         </div>
     );
 };
