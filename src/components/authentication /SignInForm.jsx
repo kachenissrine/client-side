@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
+import AuthLeftSide from "./AuthLeftSide.jsx";
 
 
 const SignIn = () => {
@@ -19,13 +20,7 @@ const SignIn = () => {
     return (
         <div className="w-full h-screen flex items-start">
 
-            {/*left side login page*/}
-            <div className="relative w-1/2 h-full flex flex-col">
-                <img src="../../../public/images/auth/signIn.jpg" className="w-full h-full object-cover"/>
-                {/*<div
-                    className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-blue-600 opacity-70"></div>*/}
-            </div>
-
+            <AuthLeftSide />
 
             {/*right side login form */}
             <div className="w-1/2 h-full flex flex-col p-20 justify-between py-9">
