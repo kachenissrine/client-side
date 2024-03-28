@@ -1,24 +1,6 @@
-/*// src/AppRouter.jsx
+// src/AppRouter.jsx
 
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
 
-const AppRouter = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/signin" pages={SignIn} />
-            </Switch>
-        </Router>
-    );
-};
-
-export default AppRouter;*/
 
 
 import ReactDOM from "react-dom/client";

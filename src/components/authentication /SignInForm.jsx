@@ -1,22 +1,25 @@
 // Header.js
 // eslint-disable-next-line no-unused-vars
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import AuthLeftSide from "./AuthLeftSide.jsx";
 
 
 const SignIn = () => {
-
-    const [email,setEmail]=useState("");
-    const [password,setPassword]=useState("");
-
-   // console.log("email:"+ email, "pass:" +password);
-
-    const[ Data,setData]=useState({
+    const[ data,setData]= useState({
         email:"",
         password:""
     })
-    console.log(Data);
+
+    const changeInput = (name, value) =>{
+        setData({...data, [name]: value})
+    }
+
+
+
+
+    console.log({data});
+
     return (
         <div className="w-full h-screen flex items-start">
 
@@ -41,9 +44,9 @@ const SignIn = () => {
                     </div>
 
                     <div className="w-full flex flex-col ">
-                        <input type="email" placeholder="Email" value={Data.email} onChange={(e)=>(setData(e.target.value))}
+                        <input type="email" placeholder="Email" value={data.email} onChange={(e)=> changeInput('email', e.target.value)}
                                className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-                        <input type="password" placeholder="Password" value={Data.password} onChange={(e)=>(setData(e.target.value))}
+                        <input type="password" placeholder="Password" value={data.password} onChange={(e)=>(setData({...data, password: e.target.value}))}
                                className="w-full my-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
 
