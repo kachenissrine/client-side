@@ -1,3 +1,4 @@
+/*
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import CategoryItem from "./item.jsx";
@@ -161,4 +162,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default Index;*/
