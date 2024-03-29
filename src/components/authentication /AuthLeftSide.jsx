@@ -5,7 +5,7 @@ import SignUp from "./SignUpFormCandidate.jsx";
 const LeftSide = () => {
   return (
       <div className="relative w-1/2 h-full flex flex-col">
-          <img src="../../../public/images/auth/signin.png" className="w-full h-full object-cover"/>
+          <img src="/images/auth/signin.png" className="w-full h-full object-cover"/>
       </div>
   );
 };
