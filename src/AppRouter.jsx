@@ -9,6 +9,8 @@ import EmailValidation from "./pages/EmailValidation.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import NoPage from "./pages/NoPage.jsx";
 import ResetPassword from "./components/authentication /ResetPassword.jsx";
+import Search from "./components/Search.jsx";
+import FindJob from "./pages/FindJob.jsx";
 export default function App() {
     return (
         <BrowserRouter>
@@ -21,6 +23,11 @@ export default function App() {
                 <Route path="/signupcandidate" element={<SignUp />}/>
                 <Route path="*" element={<NoPage />}/>
                 <Route path="/resetpassword" element={<ResetPassword />}/>
+
+
+                <Route path="/findjobs" element={<FindJob/>}/>
+
+
 
 
             </Routes>

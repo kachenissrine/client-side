@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <header className="bg-white">
+        <header className="bg-white fixed w-full top-0 z-50 shadow ">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-16 items-center justify-between ">
                     <div className="md:flex md:items-center md:gap-12">
                         <h1 className="text-base text-black font-semibold ml-2">Jobpilot</h1>
                     </div>
@@ -14,9 +14,12 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
+
+                                <Link to="/">
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-blue-800/75" href="#"> Home </a>
+                                    <a className="text-gray-500 transition hover:text-blue-800/75"> Home </a>
                                 </li>
+                                </Link>
 
                                 <li>
                                     <a className="text-gray-500 transition hover:text-blue-800/75"
