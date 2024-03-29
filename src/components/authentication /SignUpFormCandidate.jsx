@@ -8,8 +8,6 @@ const SignUp = () => {
         <div className="w-full h-screen flex items-start">
 
             <AuthLeftSide />
-
-
             {/*right side login form */}
             <div className="w-1/2 h-full flex flex-col p-20 justify-between py-9">
                 <div className="flex items-center">

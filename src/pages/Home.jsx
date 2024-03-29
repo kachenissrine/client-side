@@ -6,7 +6,7 @@ import Navbar from "../components/common/Navbar.jsx";
 import Footer from "../components/common/Footer.jsx";
 import Hero from "../components/Hero.jsx";
 import Stats from "../components/Stats.jsx";
-import Category from "../components/category/index.jsx";
+//import Category from "../components/category/index.jsx";
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
             <Navbar />
             <Hero/>
             <Stats/>
-            <Category/>
+            {/*<Category/>*/}
             <Footer/>
         </div>
     );

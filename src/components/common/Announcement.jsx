@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 function Announcement(props) {
     return (
@@ -6,4 +6,4 @@ function Announcement(props) {
     );
 }
 
-export default Announcement;
+export default Announcement;*/
