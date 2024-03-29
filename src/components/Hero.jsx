@@ -110,7 +110,7 @@ const Hero = () => {
 
 
               <div className="relative ms-4">
-                  <img className="" src="public/images/undraw_Learning.png" alt="public/images/undraw_Learning.png"/>
+                  <img className="" src="/images/undraw_Learning.png" alt="public/images/undraw_Learning.png"/>
               </div>
           </div>
       </div>
